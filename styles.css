@@ -57,14 +57,14 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    gap: 15px;
-    font-size: 2.4em;
+    gap: 12px;
+    font-size: 1.8em;
     font-weight: 900;
     color: var(--white);
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
-    padding: 15px 30px;
+    padding: 12px 25px;
     border-radius: 50px;
     border: 3px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2), inset 0 2px 10px rgba(255, 255, 255, 0.2);
@@ -73,6 +73,7 @@ body {
     overflow: hidden;
     white-space: nowrap;
     flex-shrink: 0;
+    max-width: fit-content;
 }
 
 .logo::before {
@@ -91,12 +92,14 @@ body {
     z-index: 1;
     white-space: nowrap;
     font-size: 1em;
+    line-height: 1.2;
 }
 
 .logo-icon {
-    font-size: 2.5em;
+    font-size: 2em;
     filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
     animation: bounce 2s ease-in-out infinite;
+    flex-shrink: 0;
 }
 
 @keyframes bounce {
@@ -1388,20 +1391,22 @@ body {
     
     .logo {
         justify-content: center;
-        width: 100%;
+        width: auto;
+        max-width: 90%;
         text-align: center;
-        font-size: 1.8em;
-        padding: 12px 20px;
-        gap: 10px;
+        font-size: 1.4em;
+        padding: 10px 18px;
+        gap: 8px;
+        margin: 0 auto;
     }
     
     .logo-text {
-        font-size: 0.9em;
+        font-size: 0.85em;
         letter-spacing: 1px;
     }
     
     .logo-icon {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     .hero-title {
